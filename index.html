@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
 
     <!-- Basic -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
-   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
- 
+
      <!-- Site Metas -->
     <title>Sakshi's Portfolio</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="keywords" content="Sakshi Sharma, AI engineer, LLM applications, agentic AI, RAG, LangChain, LangGraph, Python, FastAPI, n8n, Docker, backend development, workflow automation, BIT Mesra">
+    <meta name="description" content="Portfolio of Sakshi Sharma - AI Engineer (LLM Applications) building agentic pipelines, production automation infrastructure and end-to-end backend systems with FastAPI, n8n and PostgreSQL.">
+    <meta name="author" content="Sakshi Sharma">
 
     <!-- Site Icons -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Site CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=3">
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css?v=3">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom.css?v=3">
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 
     <!--[if lt IE 9]>
@@ -48,7 +54,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <p style="font-size: 60px; color: white; font-family: 'fangsong'"> Sakshi </p>
+            <p class="brand-name">Sakshi</p>
 		</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
@@ -67,7 +73,11 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#testimonials">Projects & Experience</a>
+              <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
             </li>
 
 			<li class="nav-item">
@@ -81,14 +91,14 @@
 	<section id="home" class="main-banner parallaxie" style="background: url('uploads/banner-01.jpg')">
 		<div class="heading">
 			<h1>hello i'm Sakshi</h1>
-			<p>Final year Undergraduate student at BIT Mesra <br> interested in Data Science and AIML.</p>
+			<p>AI Engineer (LLM Applications) <br> Backend Development &amp; Workflow Automation</p>
 			<h3 class="cd-headline clip is-full-width">
-				<span>I am skilled in  </span>
+				<span>I work with  </span>
 				<span class="cd-words-wrapper">
-					<b class="is-visible">Data Science</b>
-					<b>AIML</b>
-					<b>Python</b>
-					<b>Linux and VCS</b>
+					<b class="is-visible">Agentic AI</b>
+					<b>RAG &amp; LLMs</b>
+					<b>FastAPI</b>
+					<b>n8n &amp; Docker</b>
 				</span>
 			</h3>
 		</div>
@@ -125,18 +135,30 @@
                 <div class="col-md-6">
                     <div class="message-box">                        
                         <h2>About Me.</h2>
-                        <p> Computer Science undergraduate final year student with strong interest and specialized skills in Python,
-                            SQL, and machine learning with hands-on internship experience in load forecasting and infrastructure
-                            analytics. Skilled in data cleaning, visualization, and predictive modeling; seeking opportunities in data
-                            engineering/analytics to apply technical expertise and deliver data-driven solutions.</p>
+                        <p> B.Tech Computer Science graduate from Birla Institute of Technology, Mesra with hands-on experience
+                            building multi-LLM agentic pipelines, production-grade automation infrastructure, and end-to-end
+                            backend systems.</p>
+                        <p> I have built a multi-model consensus pipeline (GPT-4.1-mini, Claude, DeepSeek, Grok) for automated
+                            classification, and an autonomous lead-qualification pipeline that researches, scores, and reaches out
+                            to leads end-to-end using LLMs. Skilled in FastAPI, n8n orchestration, and integrating LLMs into
+                            backend-driven automation workflows.</p>
+                        <p> Experienced across the full SDLC, from requirement gathering and system design to deployment and
+                            documentation, in fast-paced, cross-functional teams.</p>
 
-                        <a href="/uploads/Resume-Sakshi.pdf" download class="sim-btn btn-hover-new" data-text="Download CV"><span>Download CV</span></a>
+                        <ul class="about-facts">
+                            <li><strong>Education</strong> B.Tech, Computer Science &amp; Engineering, BIT Mesra (2022-2026), CGPA 8.01/10.00</li>
+                            <li><strong>Schooling</strong> St. Fidelis Sr. Sec. School, Aligarh. CBSE Class XII 94.4%, Class X 96%</li>
+                            <li><strong>Research</strong> Review papers presented at ICCTMRI 2023 and RTST-ISRO 2024</li>
+                            <li><strong>Leadership</strong> Head Coordinator, Alumni Relations and Student Placement Coordinator at BIT Mesra. Led teams of 25+ and coordinated placement drives with top recruiters</li>
+                        </ul>
+
+                        <a href="uploads/Sakshi_Sharma_Resume_Sep%209.pdf" download="Sakshi_Sharma_Resume.pdf" class="sim-btn btn-hover-new" data-text="Download CV"><span>Download CV</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
                 <div class="col-md-6">
                     <div class="right-box-pro wow fadeIn">
-                        <img src="uploads/about_04.jpg" alt="" class="img-fluid img-rounded">
+                        <img src="uploads/about_new.jpeg" alt="Sakshi Sharma" class="img-fluid img-rounded">
                     </div><!-- end media -->
                 </div><!-- end col -->
             </div><!-- end row -->
@@ -147,36 +169,64 @@
         <div class="container">
             <div class="section-title text-left">
                 <h3>Skills</h3>
-                <p>I am skilled in different domains but here are the main things I have got good with.</p>
+                <p>The tools and domains I work in day to day.</p>
             </div><!-- end title -->
 
             <div class="row">
 				<div class="col-md-4">
                     <div class="services-inner-box">
 						<div class="ser-icon">
-							<i class="flaticon-seo"></i>
+							<i class="flaticon-idea"></i>
 						</div>
-						<h2>Tools/Platforms</h2>
-						<p>Git, GitHub, Linux, VS Code, Jupyter Notebook<br><br><br><br></p>
-					</div>
-                </div><!-- end col -->
-                <div class="col-md-4">
-                    <div class="services-inner-box">
-						<div class="ser-icon">
-							<i class="flaticon-development"></i>
-						</div>
-						<h2>Core</h2>
-						<p>Problem Solving, Database Management, Dashboard Creation, Data Cleaning, EDA,
-                            ML model implementation, Data Visualization, Trouble shooting and debugging</p>
+						<h2>LLM &amp; Applied AI</h2>
+						<p>RAG (chunking, embeddings, semantic search, retrieval evaluation), prompt engineering,
+                            LLM-based classification &amp; scoring, LangChain, LangGraph, multi-agent systems,
+                            tool use &amp; function calling, OpenAI, Anthropic Claude, Google Gemini, Grok</p>
 					</div>
                 </div><!-- end col -->
 				<div class="col-md-4">
                     <div class="services-inner-box">
 						<div class="ser-icon">
+							<i class="flaticon-idea-1"></i>
+						</div>
+						<h2>Classical ML</h2>
+						<p>LSTM, SVM, Logistic Regression, Feature Engineering, NLP</p>
+					</div>
+                </div><!-- end col -->
+                <div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
 							<i class="flaticon-process"></i>
 						</div>
-						<h2>Frameworks</h2>
-						<p>NumPy, Pandas, Scikit-learn, TensorFlow, Keras, Matplotlib, Seaborn<br><br><br><br></p>
+						<h2>Frameworks &amp; Libraries</h2>
+						<p>FastAPI, TensorFlow, Pandas, NumPy, Scikit-learn</p>
+					</div>
+                </div><!-- end col -->
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-discuss-issue"></i>
+						</div>
+						<h2>Automation &amp; Orchestration</h2>
+						<p>n8n, REST APIs, Webhooks, Google Sheets / Drive / Gmail APIs</p>
+					</div>
+                </div><!-- end col -->
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-development"></i>
+						</div>
+						<h2>Languages &amp; Databases</h2>
+						<p>Python, MySQL, HTML, CSS, PostgreSQL, Neon, pgvector (vector search)</p>
+					</div>
+                </div><!-- end col -->
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-seo"></i>
+						</div>
+						<h2>Developer Tools</h2>
+						<p>Git, GitHub, Docker, Linux, VS Code, Claude Code</p>
 					</div>
                 </div><!-- end col -->
 
@@ -186,61 +236,115 @@
 	
 
 	
-	 <div id="testimonials" class="section wb">
+	 <div id="experience" class="section wb">
         <div class="container">
             <div class="section-title text-left">
-                <h3>Projects and experience</h3>
-                <p>I have done few projects and interns as below: </p>
+                <h3>Experience</h3>
+                <p>Where I have worked and what I built there.</p>
             </div><!-- end title -->
 
             <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <div class="testi-carousel owl-carousel owl-theme">
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> TATA Power DDL (Intern)</h3>
-                                <p class="lead">Developed a LSTM neural network model for electric load forecasting, achieving ~95% prediction accuracy to
-                                    optimize energy distribution.</p>
-                            </div>
-
-                            <!-- end testi-meta -->
+                <div class="col-md-6">
+                    <div class="entry-card">
+                        <h2>Software Developer <span>(Contract)</span></h2>
+                        <p class="entry-company">OneReach.ai, CMO Office</p>
+                        <p class="entry-meta">Apr 2026 to Present</p>
+                        <p class="entry-sub">Engaged as a fractional developer building agentic automation systems for marketing
+                            and go-to-market operations, working directly with the CMO's office to translate growth workflows
+                            into production-grade pipelines.</p>
+                        <ul>
+                            <li>Built an end-to-end agentic pipeline orchestrating 5 services (Google Sheets, Gemini AI, FastAPI,
+                                Postgres, Gmail) that enriches raw leads with AI-powered research, scores relevance and
+                                auto-sends personalized outreach to qualified leads.</li>
+                            <li>Designed a FastAPI backend as the single API layer to Postgres, enforcing validation, upsert
+                                logic and status-driven pipeline progression across all stages.</li>
+                            <li>Implemented dedup via sheet write-back to prevent duplicate outreach, and score-threshold
+                                gating (70+) so only high-intent leads receive AI-drafted emails.</li>
+                            <li>Built a React dashboard (Vite, Tailwind, Recharts) for real-time pipeline monitoring, including
+                                funnel overview, stage visualization and a filterable lead table with status badges.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Agentic AI</span><span>FastAPI</span><span>n8n</span><span>PostgreSQL</span><span>React</span>
                         </div>
-                        <!-- end testimonial -->
+                    </div>
+                </div><!-- end col -->
 
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> RUIDP (Intern)</h3>
-                                <p class="lead">Contributed in design and developement of a responsive web portal with the CAPP (Community Awareness
-                                    and Public Participation) team to improve public awareness.</p>
-                            </div>
-
-                            <!-- end testi-meta -->
+                <div class="col-md-6">
+                    <div class="entry-card">
+                        <h2>Software Engineering Intern <span>(Process Automation)</span></h2>
+                        <p class="entry-company">mPass Lobby Management Pvt. Ltd.</p>
+                        <p class="entry-meta">Jan 2026 to Apr 2026</p>
+                        <ul>
+                            <li>Built end-to-end n8n automation workflows, self-hosted via Docker, for multi-country financial
+                                data pipelines spanning India, USA and South Korea, covering sectors, IPO tracking and
+                                corporate actions.</li>
+                            <li>Designed a multi-LLM agentic classification pipeline (GPT-4.1-mini, Claude, DeepSeek, Grok)
+                                with a majority-vote consensus mechanism, improving classification reliability over
+                                single-model approaches.</li>
+                            <li>Engineered scalable data pipelines integrating REST APIs, webhooks and Google Sheets/Drive/Gmail
+                                APIs, using Google Sheets as an inter-stage data bus for pipeline orchestration.</li>
+                            <li>Implemented a centralized error handler across all n8n workflows, standardizing failure logging
+                                and alerting for production reliability.</li>
+                            <li>Eliminated ~91% of manual operational tasks through automation, measured against
+                                pre-automation baselines.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>n8n</span><span>Docker</span><span>Multi-LLM</span><span>REST APIs</span><span>Webhooks</span>
                         </div>
-                        <!-- end testimonial -->
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
 
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Developing NeuralMail</h3>
-                                <p class="lead">Currently developing a custom mailing system including the backend and front-end android app while also implementing the smart spam and ham detection using AIML techniques</p>
-                            </div>
+	 <div id="projects" class="section lb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Projects</h3>
+                <p>Things I have built end to end, from schema to deployment.</p>
+            </div><!-- end title -->
 
-                            <!-- end testi-meta -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="entry-card">
+                        <h2>Load Demand Forecasting <span>using LSTM</span></h2>
+                        <p class="entry-company">TATA Power DDL, New Delhi, Data Science Intern</p>
+                        <p class="entry-meta">Jun 2025 to Jul 2025</p>
+                        <ul>
+                            <li>Processed 14 months of 15-minute electricity demand and weather data, performing
+                                preprocessing, stationarity testing, correlation-based feature selection and exploratory
+                                time-series analysis.</li>
+                            <li>Engineered lag and rolling statistical features to capture short-term dependencies, daily
+                                seasonality and volatility, with leakage-safe feature construction.</li>
+                            <li>Developed an LSTM-based time-series regression model using MinMax scaling, sequential
+                                10-timestep inputs, Adam optimization and MSE loss to forecast short-term electricity demand.</li>
+                            <li>Achieved <strong>3.40% test MAPE</strong>, validated using actual-vs-predicted plots and
+                                error-distribution analysis.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Python</span><span>TensorFlow</span><span>Pandas</span><span>Scikit-learn</span><span>LSTM</span>
                         </div>
+                    </div>
+                </div><!-- end col -->
 
-
-
-
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Developed attendance system</h3>
-                                <p class="lead">Developed a fun ECE project in college to ease the attendance process for the classes, where the students have to scan their fingerprint on device which will mark presence on excel.</p>
-                            </div>
-                            <div class="testi-meta">
-
-                            </div>
-                            <!-- end testi-meta -->
-                        </div><!-- end testimonial -->
-                    </div><!-- end carousel -->
+                <div class="col-md-6">
+                    <div class="entry-card">
+                        <h2>Neural Mail <span>Email Classification</span></h2>
+                        <p class="entry-company">Machine learning project</p>
+                        <p class="entry-meta">Apr 2025 to May 2025</p>
+                        <ul>
+                            <li>Developed an NLP-based email classification pipeline using Python, scikit-learn and TF-IDF
+                                vectorization to classify incoming messages by textual patterns.</li>
+                            <li>Trained and evaluated Multinomial Naive Bayes and Linear SVM classifiers on 9,971 cleaned email
+                                samples using accuracy, precision, recall, F1-score and confusion matrix; the Linear SVM
+                                achieved <strong>97.89% accuracy</strong> and <strong>0.988 precision</strong>.</li>
+                            <li>Integrated the trained model into an email filtering pipeline for automated spam vs. legitimate
+                                classification.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Python</span><span>NLP</span><span>TF-IDF</span><span>Linear SVM</span><span>Naive Bayes</span><span>Scikit-learn</span>
+                        </div>
+                    </div>
                 </div><!-- end col -->
             </div><!-- end row -->
         </div><!-- end container -->
@@ -252,7 +356,12 @@
         <div class="container">
             <div class="section-title text-left">
                 <h3>Contact</h3>
-                <p>Mail: sakshi00273@gmail.com <br> LinkedIn: <a href="https://www.linkedin.com/in/sakshi-sharma-8520bb260/"> Click Here</a></p>
+                <p>Based in New Delhi, India. Open to AI engineering, backend and automation roles. The fastest way to reach me is email.</p>
+                <ul class="contact-links">
+                    <li><i class="fa fa-envelope"></i> <a href="mailto:sakshi00273@gmail.com">sakshi00273@gmail.com</a></li>
+                    <li><i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/sakshi-sharma-8520bb260/" target="_blank" rel="noopener">linkedin.com/in/sakshi-sharma</a></li>
+                    <li><i class="fa fa-github"></i> <a href="https://github.com/myselfsakshi" target="_blank" rel="noopener">github.com/myselfsakshi</a></li>
+                </ul>
             </div><!-- end title -->
 
 

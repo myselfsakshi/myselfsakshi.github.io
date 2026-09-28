@@ -1,2 +1,352 @@
 
 /** ADD YOUR AWESOME CODES HERE **/
+
+/* ------------------------------------------------------------------
+   COLOR SYSTEM
+   Slate ink + indigo accent. The template's default body colour is
+   #999999, which reads washed out; everything below darkens the text
+   and introduces one accent hue used consistently across sections.
+-------------------------------------------------------------------*/
+
+:root {
+    --ink: #111827;          /* headings */
+    --body: #374151;         /* paragraph + list copy */
+    --muted: #6b7280;        /* dates, secondary meta */
+    --accent: #be123c;       /* crimson - links, markers, chips */
+    --accent-soft: #fff1f2;  /* chip background */
+    --accent-light: #fb7185; /* accent on dark backgrounds */
+    --line: #e5e7eb;         /* hairlines, card borders */
+}
+
+/* ------------------------------------------------------------------
+   TYPE SYSTEM
+   Sora for display/headings, Inter for reading copy. Replaces the
+   template's all-Roboto-Mono stack, which set paragraphs in monospace.
+-------------------------------------------------------------------*/
+
+body,
+p, li, a, span, div, input, textarea, button,
+.section-title p,
+.entry-card .entry-company,
+.entry-card .entry-meta,
+.entry-card .entry-sub,
+.tech-tags span,
+.about-facts li,
+.contact-links li a,
+.navbar-nav .nav-link {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.brand-name,
+.cd-headline,
+.cd-words-wrapper b,
+.section-title h3,
+.message-box h2,
+.entry-card h2,
+.services-inner-box h2 {
+    font-family: 'Sora', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Sora tightens up nicely at display sizes */
+
+.section-title h3,
+.message-box h2,
+.main-banner .heading h1 {
+    letter-spacing: -1px;
+}
+
+.entry-card h2,
+.services-inner-box h2 {
+    letter-spacing: -0.3px;
+}
+
+/* navbar wordmark (was a 60px inline 'fangsong' style) */
+
+.navbar-brand .brand-name {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* section headings + standfirst */
+
+#about .message-box h2,
+.section-title h3 {
+    color: var(--ink);
+    font-weight: 600;
+}
+
+.section-title p {
+    color: var(--muted);
+}
+
+#about .message-box p {
+    color: var(--body);
+    font-size: 15px;
+    line-height: 29px;
+}
+
+/* accent the rotating words in the banner */
+
+.cd-words-wrapper b {
+    color: var(--accent-light);
+}
+
+/* ------------------------------------------------------------------
+   ABOUT - quick facts list
+-------------------------------------------------------------------*/
+
+.about-facts {
+    list-style: none;
+    margin: 28px 0 32px;
+    padding: 0;
+}
+
+.about-facts li {
+    border-left: 3px solid var(--accent);
+    color: var(--body);
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 16px;
+    padding: 2px 0 2px 16px;
+}
+
+.about-facts li strong {
+    color: var(--ink);
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+/* The template frames this photo with a near-black texture block offset
+   behind it. Swapped for a clean accent outline that matches the palette. */
+
+#about .right-box-pro {
+    box-shadow: none;
+}
+
+#about .right-box-pro img {
+    border-radius: 20px;
+    box-shadow: 0 18px 40px -18px rgba(15, 23, 42, 0.45);
+    position: relative;
+    z-index: 2;
+}
+
+#about .right-box-pro:before {
+    background: none;
+    border: 2px solid var(--accent);
+    border-radius: 20px;
+    bottom: -14px;
+    right: -14px;
+}
+
+/* ------------------------------------------------------------------
+   SKILLS - equal-height cards
+-------------------------------------------------------------------*/
+
+#services .services-inner-box {
+    border: 1px solid var(--line);
+    height: calc(100% - 30px);
+    padding: 26px 22px;
+}
+
+#services .services-inner-box h2 {
+    color: var(--ink);
+    font-size: 19px;
+}
+
+#services .services-inner-box p {
+    color: var(--body);
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 0;
+}
+
+#services .ser-icon i {
+    color: var(--accent);
+}
+
+/* ------------------------------------------------------------------
+   EXPERIENCE & PROJECTS - entry cards
+
+   Cards are flex columns and the bullet list grows, so the tech chips
+   and link line up along the bottom edge of every card in a row
+   instead of ending at ragged heights.
+-------------------------------------------------------------------*/
+
+.entry-card {
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 30px);
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+/* role is the headline; the company sits underneath it */
+
+.entry-card h2 {
+    color: var(--ink);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 0 0 8px;
+}
+
+.entry-card h2 span {
+    color: var(--muted);
+    font-weight: 400;
+}
+
+.entry-card .entry-company {
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin: 0 0 3px;
+}
+
+.entry-card .entry-meta {
+    color: var(--muted);
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.entry-card .entry-sub {
+    border-left: 3px solid var(--line);
+    color: var(--body);
+    font-size: 14px;
+    line-height: 26px;
+    margin: 16px 0 0;
+    padding-left: 14px;
+}
+
+.entry-card ul {
+    flex: 1 0 auto;      /* grows so the chips below align across cards */
+    list-style: none;
+    margin: 18px 0 0;
+    padding: 0;
+}
+
+.entry-card ul li {
+    color: var(--body);
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 13px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.entry-card ul li:before {
+    color: var(--accent);
+    content: "\25AA";        /* filled square */
+    font-size: 15px;
+    left: 0;
+    line-height: 26px;
+    position: absolute;
+}
+
+.entry-card ul li strong {
+    color: var(--ink);
+    font-weight: 600;
+}
+
+/* tech stack chips */
+
+.tech-tags {
+    margin-top: 20px;
+}
+
+.tech-tags span {
+    background: var(--accent-soft);
+    border-radius: 20px;
+    color: var(--accent);
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    margin: 0 6px 8px 0;
+    padding: 5px 13px;
+}
+
+.entry-link {
+    color: var(--accent);
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.entry-link:hover,
+.entry-link:focus {
+    color: var(--ink);
+}
+
+.entry-link i {
+    margin-left: 4px;
+}
+
+/* ------------------------------------------------------------------
+   CONTACT - link list
+-------------------------------------------------------------------*/
+
+.contact-links {
+    list-style: none;
+    margin: 25px 0 0;
+    padding: 0;
+}
+
+.contact-links li {
+    margin-bottom: 14px;
+}
+
+.contact-links li i {
+    color: var(--accent-light);
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    width: 28px;
+}
+
+.contact-links li a {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.contact-links li a:hover,
+.contact-links li a:focus {
+    color: var(--accent-light);
+}
+
+/* ------------------------------------------------------------------
+   RESPONSIVE
+-------------------------------------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+    .entry-card {
+        padding: 22px 20px;
+    }
+
+    .entry-card h2 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    #services .services-inner-box,
+    .entry-card {
+        height: auto;
+    }
+
+    .entry-card ul {
+        flex: 0 0 auto;
+    }
+}
